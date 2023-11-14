@@ -3,12 +3,11 @@ package demo.demo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.awt.print.Book;
-
 @SpringBootApplication
 public class DemoApplication {
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
+		SpringApplication.run(DemoApplication.class, args);
 		long startTime = System.currentTimeMillis();
 		Image img1 = new Image("Pamela Anderson");
 		Image img2 = new Image("Kim Kardashian");
@@ -19,6 +18,7 @@ public class DemoApplication {
 		playboyS2.add(img2);
 		playboyS2.add(img3);
 		Book playboy = new Book("Playboy");
+
 		playboy.addContent(playboyS1);
 		playboy.addContent(playboyS2);
 		long endTime = System.currentTimeMillis();
@@ -35,4 +35,5 @@ public class DemoApplication {
 		System.out.println("Printing again the section 1 took " + (endTime -
 				startTime) + " milliseconds");
 	}
+
 }
