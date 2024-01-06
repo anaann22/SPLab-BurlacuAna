@@ -1,3 +1,3 @@
-Burlacu Ana-Maria
-IR, subgrupa II
-SP
+Burlacu Ana-Maria,
+IR, subgrupa II,
+activitate laborator SP
